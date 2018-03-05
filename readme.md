@@ -1,4 +1,4 @@
-<p>W7-Laravel:</p>
+<p>W8-Laravel:</p>
 <p>Live version: https://calm-depths-13141.herokuapp.com/</p>
 <p>Trello: https://trello.com/b/97gCXVus/laravelgg</p>
 
