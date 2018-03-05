@@ -34,8 +34,7 @@
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
 
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <li class="dropdown"><a href="#" class="nav-link" data-toggle="dropdown">
                                 {{ Config::get('languages')[App::getLocale()] }}
                             </a>
                             <ul class="dropdown-menu">

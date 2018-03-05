@@ -4,9 +4,11 @@ return [
     'welcome' => 'Welcome',
     'write_article' => 'Write article',
     'read_articles' => 'Read articles',
-    'subscribe' => 'Subscribe',
+    'welcome_subscribe'=>'Subscribe',
+    'subscribe' => 'Subscribe!',
 
     'go_back'=> 'Go back',
+    'choose_author' => 'Choose an author',
     'post_article' => 'Post Article',
     'type_title' =>'Type your title here...',
     'choose_category' => 'Choose a category',

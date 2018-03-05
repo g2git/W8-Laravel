@@ -4,9 +4,11 @@ return [
     'welcome' => 'Bienvenido',
     'write_article' => 'Escribe un articulo',
     'read_articles' => 'Leer un articulo',
-    'subscribe' => 'Subscribase',
+    'welcome_subscribe'=>'Subscribase',
+    'subscribe' => '&iexcl;Subscribase!',
 
     'go_back'=> 'Regresar',
+    'choose_author' => 'Elija un autor',
     'post_article' => 'Publicar artículo',
     'type_title' =>'Escribe tu título aquí ...',
     'choose_category' => 'Elija una categoría',

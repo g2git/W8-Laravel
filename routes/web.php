@@ -54,13 +54,3 @@ Route::get('/querytest', function () {
 
 Route::post('/querytest/index', 'QuerytestController@store');
 Route::get('lang/{lang}', ['as'=>'lang.switch', 'uses'=>'LanguageController@switchLang']);
-//Route::get('/language/{locale}', 'ArticleController@language');
-
-// Route::get('/language/{locale}', function($locale){
-//   //dd($locale);
-//      session(['my_locale' => $locale]);
-//     // dd(session());
-//      //dd(session(['my_locale']));
-//
-//      return redirect()->back();
-// });

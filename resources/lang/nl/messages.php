@@ -4,9 +4,11 @@ return [
     'welcome' => 'Welkom',
     'write_article' => 'Artikel schrijven',
     'read_articles' => 'Artikelen lezen',
-    'subscribe' => 'Abonneren',
+    'welcome_subscribe'=>'Abonneren',
+    'subscribe' => 'Abonneren!',
 
     'go_back'=> ' Terug ',
+    'choose_author' => 'Kies een schrijver',
     'post_article' => 'Shrijf artikel',
     'type_title' =>'Shrijf jouw titel hier...',
     'choose_category' => 'Kies een categorie',

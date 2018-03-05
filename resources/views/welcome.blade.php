@@ -10,6 +10,6 @@
  <ul>
 <li><a href="write">{{ __('messages.write_article') }}</a></li>
 <li><a href="titles">{{ __('messages.read_articles') }}</a></li>
-<li><a href="subscribe/">{{ __('messages.subscribe') }}</a></li>
+<li><a href="subscribe/">{{ __('messages.welcome_subscribe') }}</a></li>
 </ul>
 @endsection

@@ -17,7 +17,7 @@
     <!-- <div class="form-group"> -->
      <form method = "POST" action="/titles">
        {{csrf_field()}}
-       <input type="text" name="filterbyAuthor" placeholder="Choose an author">
+       <input type="text" name="filterbyAuthor" placeholder= "@lang('messages.choose_author')">
        <button type = "submit" name = "filterAuthor">@lang('messages.filter')</button>
       </form>
    <!-- </div> -->

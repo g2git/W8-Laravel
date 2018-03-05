@@ -30,7 +30,7 @@
                          <input type="radio" name="paymentCheck" value="creditcard">
                       </div>
 
-                      <input class="btn btn-success pull-right" type="submit" name="submitSubscribe" value="@lang('messages.subscribe')!">
+                      <input class="btn btn-success pull-right" type="submit" name="submitSubscribe" value="@lang('messages.subscribe')">
                     </form>
                 </div>
             </div>

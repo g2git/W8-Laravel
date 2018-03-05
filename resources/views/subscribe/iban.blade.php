@@ -25,7 +25,7 @@
                         <small class="text-danger">{{ $errors->first('fullname') }}</small>
                       </div>
 
-                      <input class="btn btn-success pull-right" type="submit" name="submitSubscribe" value="@lang('messages.subscribe')!">
+                      <input class="btn btn-success pull-right" type="submit" name="submitSubscribe" value="@lang('messages.subscribe')">
                     </form>
                 </div>
             </div>
