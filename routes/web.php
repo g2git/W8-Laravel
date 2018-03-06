@@ -11,6 +11,8 @@
 |
 */
 
+use Spatie\Analytics\Period;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -54,3 +56,8 @@ Route::get('/querytest', function () {
 
 Route::post('/querytest/index', 'QuerytestController@store');
 Route::get('lang/{lang}', ['as'=>'lang.switch', 'uses'=>'LanguageController@switchLang']);
+
+Route::get('/data', function(){
+  $analyticsData = Analytics::fetchVisitorsAndPageViews(Period::days(7));
+  dd($analyticsData);
+});
