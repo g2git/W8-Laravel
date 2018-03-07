@@ -64,3 +64,5 @@ Route::get('/data', function(){
 
 Route::get('events', 'EventController@index')->name('events.index')->middleware('auth');
 Route::post('events', 'EventController@addEvent')->name('events.add')->middleware('auth');
+
+Route::get('calendar', 'CalendarController@index')->name('calendar');
