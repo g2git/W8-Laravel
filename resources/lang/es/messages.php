@@ -77,4 +77,13 @@ return [
     'failed' => 'Estas credenciales no coinciden con nuestros registros',
     'throttle' => 'Demasiados intentos para inicio la sesión. Por favor, inténtelo de nuevo en unos segundos.',
 
+    'calendar' => 'Calendario',
+    'events' => 'Eventos',
+    'event_name' => 'Nombre del evento:',
+    'start_date' => 'Fecha de inicio:',
+    'end_date' => 'Fecha de final:',
+    'event_details' => ' Detalles de mi evento',
+    'add_event' => 'Añadir evento',
+    'valid_details' => 'Por favor ingrese información válida',
+    'event_added_successfully' =>'Evento agregado con éxito.',
 ];

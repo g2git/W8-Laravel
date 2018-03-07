@@ -25,9 +25,6 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
-
-
-
 </head>
 <body>
 
@@ -75,6 +72,7 @@
                             <li><a class="nav-link" href="{{ route('register') }}">@lang('messages.register')</a></li>
 
                         @else
+                            <li><a class="nav-link" href="{{ route('events.index') }}">@lang('messages.events')</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -105,6 +103,8 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+  <script src="{{ asset('js/app.js') }}"></script>
+
+  @yield('calendar')
 </body>
 </html>

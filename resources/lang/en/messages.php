@@ -77,5 +77,15 @@ return [
     'failed' => 'These credentials do not match our records.',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
 
+    'calendar' => 'Calendar',
+    'events' => 'Events',
+    'event_name' => 'Event Name:',
+    'start_date' => 'Start Date:',
+    'end_date' => 'End Date:',
+    'event_details' => 'My Event Details',
+    'add_event' => 'Add Event',
+    'valid_details' => 'Please enter the valid details',
+    'event_added_successfully' =>'Event added successfully.',
+
 
 ];

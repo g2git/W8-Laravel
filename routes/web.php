@@ -61,3 +61,6 @@ Route::get('/data', function(){
   $analyticsData = Analytics::fetchVisitorsAndPageViews(Period::days(7));
   dd($analyticsData);
 });
+
+Route::get('events', 'EventController@index')->name('events.index')->middleware('auth');
+Route::post('events', 'EventController@addEvent')->name('events.add')->middleware('auth');

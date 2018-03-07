@@ -77,4 +77,14 @@ return [
     'failed' => 'Deze inloggegevens komen niet overeen met onze gegevens.',
     'throttle' => 'Te veel inlogpogingen. Probeer het opnieuw in een aantal seconden.',
 
+    'calendar' => 'Kalender',
+    'events' => 'Events',
+    'event_name' => 'Event Naam:',
+    'start_date' => 'Begin Datum:',
+    'end_date' => 'Eind Datum:',
+    'event_details' => 'Mij Event Details',
+    'add_event' => 'Event toevoegen',
+    'valid_details' => 'Voer geldige gegevens in',
+    'event_added_successfully' =>'Event met succes toegevoegd.',
+
 ];

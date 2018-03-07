@@ -1,5 +1,6 @@
 {
     "require": {
-        "spatie/laravel-analytics": "^3.4"
+        "spatie/laravel-analytics": "^3.4",
+        "maddhatter/laravel-fullcalendar": "^1.3"
     }
 }

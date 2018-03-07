@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<a href="/">@lang('messages.go_back')</a>
+<a href="{{URL::previous()}}">@lang('messages.go_back')</a>
 
     <div class="col-md-5">
         <div class="form-area">
