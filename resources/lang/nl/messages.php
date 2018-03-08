@@ -87,4 +87,5 @@ return [
     'valid_details' => 'Voer geldige gegevens in',
     'event_added_successfully' =>'Event met succes toegevoegd.',
 
+
 ];

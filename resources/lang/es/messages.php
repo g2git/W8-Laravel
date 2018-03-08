@@ -16,8 +16,8 @@ return [
     'post' => '&iexcl;Enviar!',
 
     'success' => 'Éxito',
-    'logged_in' => '&iexcl;Sesión iniciada!',
-    'to_homepage' => '&iexcl;Ir a la página de inicial!',
+    'logged_in' => '¡Sesión iniciada!',
+    'to_homepage' => '¡Ir a la página de inicial!',
 
     'reset_pass' => 'Restablecer la contraseña',
     'email' => 'Dirección de correo electrónico',
@@ -59,10 +59,10 @@ return [
 
     'fill_name'=> 'Por favor, ponga su nombre',
     'message_sent' => 'Mensaje enviado con éxito',
-    'finished_subscribing' => '&iexcl;Suscripción finalizada!',
+    'finished_subscribing' => '¡Suscripción finalizada!',
 
     'query_required' => 'Se requiere una orden',
-    'injection_unsuccesfull' => '&iexcl;Inyección fallida!',
+    'injection_unsuccesfull' => "¡Inyección fallida!",
 
     'choose_language' => 'Elija un idioma',
 
@@ -86,4 +86,5 @@ return [
     'add_event' => 'Añadir evento',
     'valid_details' => 'Por favor ingrese información válida',
     'event_added_successfully' =>'Evento agregado con éxito.',
+
 ];

@@ -6,6 +6,7 @@ use App\Article;
 use App\Machtiging;
 use App\Category;
 use Illuminate\Http\Request;
+use App\Post;
 use Auth;
 
 class ArticleController extends Controller
@@ -20,8 +21,9 @@ class ArticleController extends Controller
 
       $titles = Article::latest()->get();
       $items = Category::all();
+      $posts = Post::all();
 
-      return view('titles.index', compact('titles', 'items'));
+      return view('titles.index', compact('titles', 'items', 'posts'));
     }
 
     /**
@@ -108,6 +110,23 @@ class ArticleController extends Controller
           $titles = Article::where('category_id',request('filterbyCategory'))->latest()->get();
           return view('titles.index', compact('titles', 'items'));
         }
+    }
+
+    public function postPost(Request $request)
+    {
+
+        request()->validate(['rate' => 'required']);
+        $post = Post::find($request->id);
+
+
+        $rating = new \willvincent\Rateable\Rating;
+        $rating->rating = $request->rate;
+        $rating->user_id = auth()->user()->id;
+
+        $post->ratings()->save($rating);
+
+        return redirect('/titles');
+
     }
 
     /**

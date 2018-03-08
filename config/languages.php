@@ -2,6 +2,6 @@
 
 return [
     'en' => 'English',
-    'nl' => 'Dutch',
-    'es' => 'Spanish'
+    'nl' => 'Nederlands',
+    'es' => 'Español'
 ];

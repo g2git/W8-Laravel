@@ -66,3 +66,15 @@ Route::get('events', 'EventController@index')->name('events.index')->middleware(
 Route::post('events', 'EventController@addEvent')->name('events.add')->middleware('auth');
 
 Route::get('calendar', 'CalendarController@index')->name('calendar');
+
+// Route::get('posts', 'HomeController@posts')->name('posts');
+// Route::post('posts', 'HomeController@postPost')->name('posts.post');
+// Route::get('posts/{id}', 'HomeController@show')->name('posts.show');
+
+Route::get('pos', function () {
+    return view('pos');
+});
+
+Route::get('pos2', function () {
+    return view('pos2');
+});

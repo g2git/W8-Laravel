@@ -31,6 +31,24 @@
               <!-- Post Content/Body -->
               <p class="lead">{{$show_article -> article}}</p>
 
+              <form action="#" method="POST">
+
+                  {{ csrf_field() }}
+
+              <div class="rating">
+
+                  <input id="input-1" name="rate" class="rating rating-loading" data-min="0" data-max="5" data-step="1" value="5" data-size="xs">
+
+                  <input type="hidden" name="id" required="" value="2">
+
+                  <span class="review-no">422 reviews</span>
+
+                  <br/>
+
+                  <button class="btn btn-success">Submit Review</button>
+
+              </div>
+              </form>
 
               <hr>
 
@@ -60,5 +78,17 @@
                 @endforeach
                 </div>
               </div>
+
+@endsection
+
+@section('calendar')
+
+
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-star-rating/4.0.2/css/star-rating.min.css" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-star-rating/4.0.2/js/star-rating.min.js"></script>
+
 
 @endsection
