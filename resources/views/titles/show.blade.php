@@ -41,14 +41,16 @@
 
                   <input type="hidden" name="id" required="" value="{{ $post->id }}">
 
-                  <span class="review-no">422 reviews</span>
-
                   <br/>
 
                   <button class="btn btn-success">@lang('messages.submit_rating')</button>
 
               </div>
               </form>
+
+              @if (session()->has('data'))
+              <div class="alert alert-success">{{session('data')}}</div>
+              @endif
 
               <hr>
 

@@ -89,4 +89,7 @@ return [
 
     'submit_rating' => 'Enviar calificación',
 
+    'file_does_not_exist' => '¡El archivo solicitado no existe en nuestro servidor!',
+    'rated_article' => 'Ya has calificado este artículo',
+
 ];

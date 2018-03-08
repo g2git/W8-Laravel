@@ -89,5 +89,6 @@ return [
 
     'submit_rating' => 'Submit Rating',
 
-
+    'file_does_not_exist' => 'Requested file does not exist on our server!',
+    'rated_article' => 'You have already rated this article',
 ];

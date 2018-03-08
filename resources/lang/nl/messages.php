@@ -88,4 +88,7 @@ return [
     'event_added_successfully' =>'Event met succes toegevoegd.',
 
     'submit_rating' => 'Beoordeling indienen',
+
+    'file_does_not_exist' => 'Gevraagd bestand bestaat niet op onze server!',
+    'rated_article' => 'U hebt dit artikel al beoordeeld',
 ];

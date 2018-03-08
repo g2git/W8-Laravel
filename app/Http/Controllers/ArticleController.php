@@ -8,6 +8,8 @@ use App\Category;
 use Illuminate\Http\Request;
 use App\Post;
 use Auth;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Redirect;
 
 class ArticleController extends Controller
 {
@@ -126,18 +128,26 @@ class ArticleController extends Controller
 
     public function postPost(Request $request)
     {
+        $userid = Auth::id();
         request()->validate(['rate' => 'required']);
         $post = Post::find($request->id);
 
+        //check if user already voted on this article
+        $numvotes = DB::table('ratings')->where('rateable_id', $post->id)->where('user_id', $userid)->count();
 
-        $rating = new \willvincent\Rateable\Rating;
-        $rating->rating = $request->rate;
-        $rating->user_id = auth()->user()->id;
+        if($numvotes == 0)
+        {
+          $rating = new \willvincent\Rateable\Rating;
+          $rating->rating = $request->rate;
+          $rating->user_id = auth()->user()->id;
 
-        $post->ratings()->save($rating);
+          $post->ratings()->save($rating);
 
-        return redirect('/titles');
-
+          return redirect('/titles');
+        }else{
+          $errormessage = __('messages.rated_article');
+          return redirect()->back()->with('data', $errormessage);
+        }
     }
 
     /**

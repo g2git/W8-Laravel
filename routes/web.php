@@ -87,15 +87,6 @@ Route::get('download/test1.xlsx', function()
     else
     {
         // Error
-        exit('Requested file does not exist on our server!');
+        exit(__('messages.file_does_not_exist'));
     }
-});
-
-
-Route::get('pos', function () {
-    return view('pos');
-});
-
-Route::get('pos2', function () {
-    return view('pos2');
 });
