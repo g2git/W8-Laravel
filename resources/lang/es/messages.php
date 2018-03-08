@@ -87,4 +87,6 @@ return [
     'valid_details' => 'Por favor ingrese información válida',
     'event_added_successfully' =>'Evento agregado con éxito.',
 
+    'submit_rating' => 'Enviar calificación',
+
 ];

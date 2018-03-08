@@ -87,5 +87,7 @@ return [
     'valid_details' => 'Please enter the valid details',
     'event_added_successfully' =>'Event added successfully.',
 
+    'submit_rating' => 'Submit Rating',
+
 
 ];

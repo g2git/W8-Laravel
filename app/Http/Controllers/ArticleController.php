@@ -69,14 +69,24 @@ class ArticleController extends Controller
 
           else
           {
+            //insert data in articles table
             $post = new Article;
-          //Creata a new post using the request data
+            //Creata a new post using the request data
             $post->article_title = $request->article_title;
             $post->article = $request->article_body;
             $post->category_id = $request->category_id;
             $post->user_id = $id;
             //Save it to DB
             $post->save();
+
+
+            //insert data in posts table
+            $post_toPost = new Post;
+            //Creata a new post using the request data
+            $post_toPost->name = $request->article_title;
+            $post_toPost->article_id = Article::where('user_id', $id)->latest()->value('id');
+            //Save it to DB
+            $post_toPost->save();
 
             //And redirect
             return redirect('/titles');
@@ -94,27 +104,28 @@ class ArticleController extends Controller
 
       $show_article= Article::find($id);
       $comments = \App\Comment::where('article_id',$id)->get();
-      return view('titles.show', compact('show_article','comments'));
+      $post = Post::where('article_id', $id)->first();
+      return view('titles.show', compact('show_article','comments', 'post'));
     }
 
     //Store 2
     public function store2(Request $request)
     {
+      $posts = Post::all();
       $items = Category::all();
       if ($request->has('filterAuthor'))
       {
       $titles = Article::where('user_id',request('filterbyAuthor'))->latest()->get();
-      return view('titles.index', compact('titles', 'items'));
+      return view('titles.index', compact('titles', 'items', 'posts'));
       }else
         {
           $titles = Article::where('category_id',request('filterbyCategory'))->latest()->get();
-          return view('titles.index', compact('titles', 'items'));
+          return view('titles.index', compact('titles', 'items', 'posts'));
         }
     }
 
     public function postPost(Request $request)
     {
-
         request()->validate(['rate' => 'required']);
         $post = Post::find($request->id);
 

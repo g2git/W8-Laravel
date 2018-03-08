@@ -28,7 +28,9 @@ require_once('../vendor/autoload.php');
         ;
 
  $writer = new Xlsx($spreadsheet);
- $writer->save('../tmp/test.xlsx');
+ $writer->save('../storage/file/test1.xlsx');
 
 ?>
+
+<a href={{ asset('download/test1.xlsx') }}>Excel</a>
 @endsection

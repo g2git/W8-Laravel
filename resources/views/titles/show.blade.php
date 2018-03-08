@@ -31,21 +31,21 @@
               <!-- Post Content/Body -->
               <p class="lead">{{$show_article -> article}}</p>
 
-              <form action="#" method="POST">
+              <form method="POST" action="/vote">
 
                   {{ csrf_field() }}
 
               <div class="rating">
 
-                  <input id="input-1" name="rate" class="rating rating-loading" data-min="0" data-max="5" data-step="1" value="5" data-size="xs">
+                  <input id="input-1" name="rate" class="rating rating-loading" data-min="0" data-max="5" data-step="1" value="{{ $post->userAverageRating }}" data-size="xs">
 
-                  <input type="hidden" name="id" required="" value="2">
+                  <input type="hidden" name="id" required="" value="{{ $post->id }}">
 
                   <span class="review-no">422 reviews</span>
 
                   <br/>
 
-                  <button class="btn btn-success">Submit Review</button>
+                  <button class="btn btn-success">@lang('messages.submit_rating')</button>
 
               </div>
               </form>
