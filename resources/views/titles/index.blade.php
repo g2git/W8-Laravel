@@ -102,7 +102,7 @@
               <div class="form-group col-md-2">
                 <form method = "POST" action="/titles">
                   {{csrf_field()}}
-                  <select  name="filterbyCategory" required>
+                  <select style="width:100%"  name="filterbyCategory" required>
                     <option value="" selected disabled>@lang('messages.choose_category')</option>
                     @foreach($items as $item)
                      <option value="{{$item->id}}">{{$item->name}}</option>
@@ -122,7 +122,7 @@
               <div class="col-md-10 blogShort" style="float:right">
                 @foreach ($titles as $title)
 
-                                <h1><a href="/titles/{{$title->id}}">{{$title -> user_id}}: {{$title -> article_title}}</a></h1>
+                                <h1><a href="/titles/{{$title->id}}">{{$title -> user->name}} : {{$title -> article_title}}</a></h1>
                                 <img src="http://www.kaczmarek-photo.com/wp-content/uploads/2012/06/guinnes-150x150.jpg" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
                                 <a class="btn btn-blog pull-right marginBottom10" href="/titles/{{$title->id}}">@lang('messages.read_more')</a>
                                 <input id="input-1" name="input-1" class="rating rating-loading" data-min="0" data-max="5" data-step="0.1" value="{{ $posts[$title->id-1]->averageRating }}" data-size="xs" disabled="">

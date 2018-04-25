@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Comment;
 use Illuminate\Http\Request;
+use Auth;
 
 class CommentController extends Controller
 {
@@ -47,10 +48,12 @@ class CommentController extends Controller
         $post = new Comment;
 
       //Creata a new post using the request data
-      if($request->has('anonymous')){
-       $post->user_id = 15; //user_id for anonymous
-     }else{
-       $post->user_id = 1;   //has to be user_id for current_user
+      $id = Auth::id();
+
+      if($request->has('anonymous')){  //user_id is null for anonymous
+     }
+     else{
+       $post->user_id = $id;   //has to be user_id for current_user
       }
 
         $post->comment = $request->comment;
@@ -60,7 +63,8 @@ class CommentController extends Controller
         $post->save();
 
         //And redirect to same page with new comment
-        return redirect()->back()->with('data', ['article_id']);
+        return redirect()->back();
+
 
     }
 

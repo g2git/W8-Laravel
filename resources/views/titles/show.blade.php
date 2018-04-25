@@ -110,7 +110,7 @@
                           <!-- Author -->
                           <p class="lead">
                             by
-                            <a href="#">{{$show_article -> user_id}}</a>
+                            <a href="#">{{$show_article -> user->name}}</a>
                           </p>
 
                           <hr>
@@ -170,8 +170,7 @@
                           <div class="media mb-4">
                           <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
                             <div class="media-body">
-                              <h5 class="mt-0">{{$comment -> user_id}}</h5>
-                                 {{$comment -> comment}}
+                              <h5 class="mt-0">{{$comment -> user ->name}}: {{$comment -> comment}}</h5>
                               </div>
                             </div>
                             @endforeach
