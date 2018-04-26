@@ -1,65 +1,58 @@
-<p>W8-Laravel:</p>
 <p>Live version: https://calm-depths-13141.herokuapp.com/</p>
-<p>Trello: https://trello.com/b/97gCXVus/laravelgg</p>
+<p>Planning on Trello: https://trello.com/b/97gCXVus/laravelgg</p>
 
 
+<div>
+<p><h3><b>Project name: W8-Laravel</b></h3></p>
+</div>
 
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+<div>
+  <p><h3><b>Description:</b></h3></p>
+  <p>W8-Laravel is a blog project to get acquainted with Laravel functionality. The app will provide users the basic features of a blog i.e. writing and reading articles, commenting and reading articles, and other functionalities to enhance the user experience</p>
+</div>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+<div>
+  <p><h3><b>Usage:</b></h3></p>
+  <p><b>Register</b></p>
+  <p>In order to register simply click on "Register" in the header to go to the registration page. On the registration page enter your data</p>
+  <div>
+     <img src="screenshots/Register.gif">
+  </div>
 
-## About Laravel
+  <p><b>Writing an article</b></p>
+  <p>Click on "Write article". On the "write" page enter a title, choose a category and write your article. After you are finished writing click on "Post!" to post your article. Only registered users can post articles </p>
+  <div>
+     <img src="screenshots/WriteArticle.gif">
+  </div>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+  <p><b>Commenting</b></p>
+  <p>To comment on an article click on "Read articles", on the next page choose and open an article. On the article's page scroll down to the comment section and submit a comment. If you wish to leave a comment anonymously check the "Anonymous" box</p>
+  <div>
+     <img src="screenshots/Comment.gif">
+  </div>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+  <p><b>Rating</b></p>
+  <p>In order to rate an article post click on "Read articles". On the next page choose and open an article. On the article's page scroll down to the ratings section and submit your rating.</p>
+  <div>
+     <img src="screenshots/RatingArticle.gif">
+  </div>
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
+  <p><b>Change the language</b></p>
+  <p>In order to change the language simply click on the current language in the header and select your preferred language from the drop-down list.</p>
+  <div>
+     <img src="screenshots/ChangeLanguage.gif">
+  </div>
 
-## Learning Laravel
+  <p><b>Calendar events</b></p>
+  <p>Click on "Events" in the header to go to the calendar page. Enter the name, the start date and the end date of the event and click on "Add Event" to submit the event.</p>
+  <div>
+     <img src="screenshots/Calendarevents.gif">
+  </div>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
+  <p><b>Subscribing</b></p>
+  <p>In order to subscribe for a payment plan simply click on "Subscribe" and choose a payment method. Enter a valid IBAN or creditcard and click on "Subscribe!".</p>
+  <div>
+     <img src="screenshots/Subscribe.gif">
+  </div>
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Pulse Storm](http://www.pulsestorm.net/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+</div>
