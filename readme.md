@@ -8,7 +8,7 @@
 
 <div>
   <p><h3><b>Description:</b></h3></p>
-  <p>W8-Laravel is a blog project to get acquainted with Laravel functionality. The app will provide users the basic features of a blog i.e. writing and reading articles, commenting and reading articles, and other functionalities to enhance the user experience</p>
+  <p>W8-Laravel is a blog project to get acquainted with Laravel functionality. The app will provide users the basic features of a blog i.e. writing and reading articles, commenting and rating articles, and other functionalities to enhance the user experience</p>
 </div>
 
 <div>
